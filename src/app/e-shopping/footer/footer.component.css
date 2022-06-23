@@ -1,0 +1,33 @@
+.footer{
+    background-color: #172337;
+    border-top: 1px solid #ddd;
+    margin-top: 25px;
+}
+.footer-Head{
+    margin-left: 25px;
+    padding-top: 40px;
+    display: flex;
+}
+.footer-subHead{
+    flex: 1;
+}
+.foot-head{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.foot-head:hover{
+    cursor: pointer;
+}
+.companyInfo{
+    margin: auto;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+.companyInfo > a{
+    text-decoration: none;
+    color: red;
+}

@@ -1,0 +1,128 @@
+
+.cart_Header-container{
+    max-width: 100%;
+    height:auto;
+    position: sticky;
+    top:0px;
+    left:0px;
+    right:0px;
+    z-index: 1000;
+    background-color:#596eaf;
+    -webkit-box-shadow:0 1px 3px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 1px 3px rgba(236, 102, 55, 0.2);
+    margin-bottom: 10px;
+}
+.cart_subHeader-container{
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.cart_subHeader-container > img{
+    height:38px;
+    margin-left: 38px;
+}
+a img{
+    height:38px;
+    margin-left: 38px;
+}
+.cart_subHeader-container > span{
+    position: absolute;
+    top: 0px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    color: red;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    font-size: 14px;
+    right: 25%;
+}
+#cart-count:hover{
+    cursor: pointer;
+}
+#cartlogo{
+    margin: auto;
+    position: absolute;
+    right: 25%;
+    /* left: -15px; */
+    top: 15%;
+    font-size: 30px;
+}
+#cartlogo:hover{
+    color: #ec6637;
+    cursor: pointer;
+}
+.cart-menu{
+    display: inline; 
+    display: -webkit-inline-box;
+    color: white;
+    font-size: 18px;
+    padding: 8px;
+    margin: 0px;
+    font-weight: bold;
+    font-family: Roboto,Arial,sans-serif;
+}
+.cart-menuitem{
+    padding-left: 10%;
+    cursor: pointer; 
+}
+.cart-welcomemsg{
+    position: absolute;
+    right: 4%;
+    color: white;
+    font-size: 18px;
+    padding: 11px;
+    font-weight: bold;
+    font-family: Roboto,Arial,sans-serif;
+}
+@media only screen and (max-width: 1086px) {
+    .carousel-subdiv > img{
+        /* height:111px; */
+        width:100%;
+    }
+    .cart-popup-block{
+        position: fixed;
+    left: 0;
+    right: 14px;
+    top: 8%;
+    margin: auto;
+    background-color: white;
+    height: 362px;
+    width: 87%;
+    border-radius: 10px;
+    }
+    .cart-popup-editcart {
+        width:auto;
+        background-color: #ec6637;
+        color: white;
+        border-radius: 7px;
+        text-align: center;
+        margin: 8px;
+        cursor: pointer;
+        padding: 5px;
+        font-family: Roboto,Arial,sans-serif;
+        font-size: 13px;
+    }
+    .cart-popup-main {
+        height: 285px;
+        overflow: auto;
+    }
+    .cart-menu{
+        display: inline;
+        display: -webkit-inline-box;
+        color: white;
+        font-size: 9px;
+        margin: 0px;
+        padding: 2%;
+        font-weight: bold;
+    }
+    .cart-menuitem{
+        padding-left: 3%;
+       cursor: pointer;
+    }
+    .cart-welcomemsg {
+            display: none;
+    }
+}

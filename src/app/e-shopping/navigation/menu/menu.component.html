@@ -1,0 +1,16 @@
+<div class="cart_Header-container">
+  <div class="cart_subHeader-container">
+      <a> <img src="assets/images/logo.png" ></a>
+      <div class="cart-menu">
+          <div class="cart-menuitem" routerLink="/Home">Home</div>
+          <div class="cart-menuitem" routerLink="/Mens">Men</div>
+          <div class="cart-menuitem" routerLink="/Womens">Women</div>
+          <div class="cart-menuitem" routerLink="/Kids">Kids</div>
+          <div class="cart-menuitem" routerLink="/Electronics">Electronics</div>
+      </div>
+      <!-- <img id="cartlogo" src="images\shopping-cart-solid.svg" onclick="showPopup()"> -->
+      <i id="cartlogo" class="fa fa-shopping-cart" aria-hidden="true" (click)="displayCart()"></i>
+      <span id="cart-count">{{totalCartNumber}}</span>
+      <div class="cart-welcomemsg"> Welcome Vivek</div>
+  </div>
+</div>

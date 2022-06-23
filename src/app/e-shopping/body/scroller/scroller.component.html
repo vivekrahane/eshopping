@@ -1,0 +1,16 @@
+<div class="corousel-row">
+  <div id="txtscollerComponent" class="corousel-subrow">
+       <div class="corousel-head" *ngFor="let scroller of finalProduct">
+          <div class="corousel-media">
+              <img class="corousel-img" src="{{scroller.imageSrc}}" alt="{{scroller.productName}}" />
+          </div>
+          <div class="corousel-details">
+              <div class="corousel-title">
+                  {{scroller.price}}<br>
+                  {{scroller.productName}}
+                  <div class="cart-popup-editcart" (click)="addToCart(scroller)">Add to cart</div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="containerr">
+    <div id="txtrow" class="roww" >
+        <div class="main-containt" *ngFor="let boxview of finalProduct">
+            <div class="content-Text">{{boxview.price}}<br>
+                {{boxview.productName}}<br>
+                <div class="cart-popup-editcart" (click)="addToCart(boxview)">Add to cart</div>
+            </div>
+            <img src="{{boxview.imageSrc}}" width="300px" height="300px">
+        </div>   
+    </div>
+  </div>

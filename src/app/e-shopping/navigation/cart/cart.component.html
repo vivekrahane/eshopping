@@ -1,0 +1,27 @@
+<div  [ngClass]="{inputclass:display === true}" class=" cart-popup-block">
+    <div class="cart-popup-header">
+        <i class="fa fa-times" aria-hidden="true" (click)="closePopup()"></i>
+        <div class="cart-popup-text">Shopping Cart</div>
+    </div>
+    <div id="cartMain" class="cart-popup-main">
+        <table class="carttable" *ngFor= "let list of products" >
+            <tr>
+                <th><img src={{list.imageSrc}}></th>
+                <th>{{list.productName}}</th>
+                <th class="qtyprice">{{list.price}}</th>
+                <th>   
+                    {{list.productQty}}    
+                    <i class="far fa-plus-square" (click)="add(list.productId)" style="font-size: 25px;color: green;cursor: pointer; margin-left: 6%"></i>
+                    <i class="far fa-minus-square" (click)="del(list.productId)" style="font-size: 25px;color: red;cursor: pointer; margin-left: 6%;"></i>
+                </th>
+               
+                <th id="txtclassremove" class="cartremove" (click)="removeFromCart(list.productId)">Remove</th>
+            </tr>
+        </table> 
+    </div>
+    <table class="carttable" ><tr><th></th><th></th><th>Subtotal:</th><th id="grandTotal">${{total}}</th></tr></table>
+    <div class="cart-popup-button">
+        <div class="cart-popup-editcart">Edit Cart</div>
+        <div class="cart-popup-editcart">Proceed to checkout</div>
+    </div>
+</div>
