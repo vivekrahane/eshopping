@@ -7,8 +7,8 @@ import { IProduct } from './productdetail';
 @Injectable()
 export class ProductDataService{
 
-    private productUrl = "/assets/data/product.json";
-    private storeUrl = "/assets/data/store.json";
+    private productUrl = "./assets/data/product.json";
+    private storeUrl = "./assets/data/store.json";
     constructor(private http: Http, private https:Http){}
     
     loadStore(){
